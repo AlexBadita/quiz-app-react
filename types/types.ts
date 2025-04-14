@@ -11,3 +11,5 @@ export interface Question {
 export interface QuestionStatus {
   value: 0 | 1 | -1;
 }
+
+export type CategoryData = Record<string, Question[]>;

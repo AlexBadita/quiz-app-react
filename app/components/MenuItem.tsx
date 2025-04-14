@@ -1,6 +1,7 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import { router } from "expo-router";
+import { useCategoryContext } from "@/context/CategoryContext";
 
 interface MenuItemPros {
   id: number;
@@ -9,8 +10,11 @@ interface MenuItemPros {
 }
 
 const MenuItem = ({ id, name, icon }: MenuItemPros) => {
-  const handleCategorySelect = (categoryId: number) => {
+  const { setCategory } = useCategoryContext();
+
+  const handleCategorySelect = (categoryName: string) => {
     router.push("/question");
+    setCategory(categoryName);
   };
 
   return (
@@ -18,7 +22,7 @@ const MenuItem = ({ id, name, icon }: MenuItemPros) => {
       <TouchableOpacity
         key={id}
         className="flex-1 border border-lightGrey rounded-xl p-4 items-center"
-        onPress={() => handleCategorySelect(id)}
+        onPress={() => handleCategorySelect(name.toLowerCase())}
       >
         <View className="mb-3">
           {icon ? React.cloneElement(icon, { size: 40, color: "#fff" }) : null}

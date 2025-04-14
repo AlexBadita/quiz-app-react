@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "quiz_app_react",
-    "slug": "quiz_app_react",
+    "name": "code_quest",
+    "slug": "code_quest",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",

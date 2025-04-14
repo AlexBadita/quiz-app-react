@@ -3,6 +3,7 @@ import "./global.css";
 import { useEffect } from "react";
 import { BackHandler } from "react-native";
 import { UserProvider } from "@/context/UserContext";
+import { CategoryProvider } from "@/context/CategoryContext";
 
 export default function RootLayout() {
   // Disable going back
@@ -19,7 +20,9 @@ export default function RootLayout() {
 
   return (
     <UserProvider>
-      <Stack screenOptions={{ headerShown: false }} />
+      <CategoryProvider>
+        <Stack screenOptions={{ headerShown: false }} />
+      </CategoryProvider>
     </UserProvider>
   );
 }

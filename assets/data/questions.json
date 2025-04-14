@@ -1,136 +1,1112 @@
-[
-  {
-    "id": 1,
-    "question": "Java is a",
-    "options": [
-      "High-level programming language",
-      "Object-oriented (class-based) programming language",
-      "Functional, imperative and reflective programming language",
-      "All the above"
-    ],
-    "correctAnswer": 4
-  },
-  {
-    "id": 2,
-    "question": "What is a correct syntax to output \"Hello World\" in Java?",
-    "options": [
-      "System.out.println(\"Hello World\");",
-      "echo(\"Hello World\");",
-      "Console.WriteLine(\"Hello World\");",
-      "print(\"Hello World\");"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "id": 3,
-    "question": "How do you insert COMMENTS in Java code?",
-    "options": [
-      "/* This is a comment",
-      "# This is a comment",
-      "// This is a comment",
-      "<-- This is a comment -->"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 4,
-    "question": "Which data type is used to create a variable that should store text?",
-    "options": ["myString", "string", "Txt", "String"],
-    "correctAnswer": 4
-  },
-  {
-    "id": 5,
-    "question": "How do you create a variable with the numeric value 5?",
-    "options": ["float x = 5;", "num x = 5;", "int x = 5;", "x = 5;"],
-    "correctAnswer": 3
-  },
-  {
-    "id": 6,
-    "question": "How do you create a variable with the floating number 2.8?",
-    "options": ["float x = 2.8f;", "byte x = 2.8f;", "x = 2.8f;", "int x = 2.8f;"],
-    "correctAnswer": 1
-  },
-  {
-    "id": 7,
-    "question": "Which method can be used to find the length of a string?",
-    "options": ["len()", "length()", "getLength()", "getSize()"],
-    "correctAnswer": 2
-  },
-  {
-    "id": 8,
-    "question": "Which method can be used to return a string in upper case letters?",
-    "options": ["toUpperCase()", "upperCase()", "toUpper()", "toUpperCaseString()"],
-    "correctAnswer": 1
-  },
-  {
-    "id": 9,
-    "question": "Which method can be used to return a string in lower case letters?",
-    "options": ["toLowerCase()", "lowerCase()", "toLower()", "toLowerCaseString()"],
-    "correctAnswer": 1
-  },
-  {
-    "id": 10,
-    "question": "Which operator can be used to compare two values?",
-    "options": ["=", "==", "===", "None of the above"],
-    "correctAnswer": 2
-  },
-  {
-    "id": 11,
-    "question": "Which keyword is used to create a class in Java?",
-    "options": ["class", "className", "myClass", "newClass"],
-    "correctAnswer": 1
-  },
-  {
-    "id": 12,
-    "question": "What is the correct way to create an object called myObj of MyClass?",
-    "options": [
-      "class myObj = new MyClass();",
-      "new myObj = MyClass();",
-      "MyClass myObj = new MyClass();",
-      "class MyClass = new MyObj();"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "id": 13,
-    "question": "Which keyword is used to import a package from the Java API library?",
-    "options": ["import", "extract", "package", "add"],
-    "correctAnswer": 1
-  },
-  {
-    "id": 14,
-    "question": "Which statement is used to stop a loop?",
-    "options": ["break", "exit", "stop", "return"],
-    "correctAnswer": 1
-  },
-  {
-    "id": 15,
-    "question": "What is the default value of data type boolean in Java?",
-    "options": ["0", "1", "true", "false"],
-    "correctAnswer": 4
-  },
-  {
-    "id": 16,
-    "question": "What is the value of the expression 79 / 10?",
-    "options": ["9", "7", "0", "None of the above"],
-    "correctAnswer": 1
-  },
-  {
-    "id": 17,
-    "question": "What is the value of the expression 79 % 10?",
-    "options": ["9", "7", "0", "None of the above"],
-    "correctAnswer": 2
-  },
-  {
-    "id": 18,
-    "question": "Which word is not a Java keyword?",
-    "options": ["protect", "public", "private", "secret"],
-    "correctAnswer": 4
-  },
-  {
-    "id": 19,
-    "question": "Which data type is not a Java primitive data type?",
-    "options": ["int", "char", "String", "boolean"],
-    "correctAnswer": 3
-  }
-]
+{
+  "java": [
+    {
+      "id": 1,
+      "question": "Java is a",
+      "options": [
+        "High-level programming language",
+        "Object-oriented (class-based) programming language",
+        "Functional, imperative and reflective programming language",
+        "All the above"
+      ],
+      "correctAnswer": 4
+    },
+    {
+      "id": 2,
+      "question": "What is a correct syntax to output \"Hello World\" in Java?",
+      "options": [
+        "System.out.println(\"Hello World\");",
+        "echo(\"Hello World\");",
+        "Console.WriteLine(\"Hello World\");",
+        "print(\"Hello World\");"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 3,
+      "question": "How do you insert COMMENTS in Java code?",
+      "options": [
+        "/* This is a comment",
+        "# This is a comment",
+        "// This is a comment",
+        "<-- This is a comment -->"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 4,
+      "question": "Which data type is used to create a variable that should store text?",
+      "options": [
+        "myString",
+        "string",
+        "Txt",
+        "String"
+      ],
+      "correctAnswer": 4
+    },
+    {
+      "id": 5,
+      "question": "How do you create a variable with the numeric value 5?",
+      "options": [
+        "float x = 5;",
+        "num x = 5;",
+        "int x = 5;",
+        "x = 5;"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 6,
+      "question": "How do you create a variable with the floating number 2.8?",
+      "options": [
+        "float x = 2.8f;",
+        "byte x = 2.8f;",
+        "x = 2.8f;",
+        "int x = 2.8f;"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 7,
+      "question": "Which method can be used to find the length of a string?",
+      "options": [
+        "len()",
+        "length()",
+        "getLength()",
+        "getSize()"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 8,
+      "question": "Which method can be used to return a string in upper case letters?",
+      "options": [
+        "toUpperCase()",
+        "upperCase()",
+        "toUpper()",
+        "toUpperCaseString()"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 9,
+      "question": "Which method can be used to return a string in lower case letters?",
+      "options": [
+        "toLowerCase()",
+        "lowerCase()",
+        "toLower()",
+        "toLowerCaseString()"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 10,
+      "question": "Which operator can be used to compare two values?",
+      "options": [
+        "=",
+        "==",
+        "===",
+        "None of the above"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 11,
+      "question": "Which keyword is used to create a class in Java?",
+      "options": [
+        "class",
+        "className",
+        "myClass",
+        "newClass"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 12,
+      "question": "What is the correct way to create an object called myObj of MyClass?",
+      "options": [
+        "class myObj = new MyClass();",
+        "new myObj = MyClass();",
+        "MyClass myObj = new MyClass();",
+        "class MyClass = new MyObj();"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 13,
+      "question": "Which keyword is used to import a package from the Java API library?",
+      "options": [
+        "import",
+        "extract",
+        "package",
+        "add"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 14,
+      "question": "Which statement is used to stop a loop?",
+      "options": [
+        "break",
+        "exit",
+        "stop",
+        "return"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 15,
+      "question": "What is the default value of data type boolean in Java?",
+      "options": [
+        "0",
+        "1",
+        "true",
+        "false"
+      ],
+      "correctAnswer": 4
+    },
+    {
+      "id": 16,
+      "question": "What is the value of the expression 79 / 10?",
+      "options": [
+        "9",
+        "7",
+        "0",
+        "None of the above"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 17,
+      "question": "What is the value of the expression 79 % 10?",
+      "options": [
+        "9",
+        "7",
+        "0",
+        "None of the above"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 18,
+      "question": "Which word is not a Java keyword?",
+      "options": [
+        "protect",
+        "public",
+        "private",
+        "secret"
+      ],
+      "correctAnswer": 4
+    },
+    {
+      "id": 19,
+      "question": "Which data type is not a Java primitive data type?",
+      "options": [
+        "int",
+        "char",
+        "String",
+        "boolean"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 20,
+      "question": "Which symbol is used to inherit a class in Java?",
+      "options": [
+        "extends",
+        "inherits",
+        ":",
+        "->"
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "html": [
+    {
+      "id": 1,
+      "question": "What does HTML stand for?",
+      "options": [
+        "Hyper Trainer Marking Language",
+        "Hyper Text Marketing Language",
+        "Hyper Text Markup Language",
+        "Hyper Text Markup Leveler"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 2,
+      "question": "Which HTML tag is used to define an internal style sheet?",
+      "options": [
+        "<css>",
+        "<script>",
+        "<style>",
+        "<link>"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 3,
+      "question": "Which tag is used to insert a line break in HTML?",
+      "options": [
+        "<lb>",
+        "<br>",
+        "<break>",
+        "<linebreak>"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 4,
+      "question": "Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?",
+      "options": [
+        "title",
+        "src",
+        "alt",
+        "longdesc"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 5,
+      "question": "How can you make a numbered list in HTML?",
+      "options": [
+        "<ul>",
+        "<ol>",
+        "<dl>",
+        "<list>"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 6,
+      "question": "Which element is used for the largest heading in HTML?",
+      "options": [
+        "<heading>",
+        "<h6>",
+        "<h1>",
+        "<head>"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 7,
+      "question": "What is the correct HTML for creating a hyperlink?",
+      "options": [
+        "<a>http://example.com</a>",
+        "<a href='http://example.com'>Example</a>",
+        "<a url='http://example.com'>Example</a>",
+        "<link>http://example.com</link>"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 8,
+      "question": "Which tag is used to define a table row in HTML?",
+      "options": [
+        "<tr>",
+        "<td>",
+        "<th>",
+        "<row>"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 9,
+      "question": "Which input type is used to create a checkbox?",
+      "options": [
+        "type='check'",
+        "type='checkbox'",
+        "type='radio'",
+        "type='select'"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 10,
+      "question": "How do you create a comment in HTML?",
+      "options": [
+        "// This is a comment",
+        "# This is a comment",
+        "<!-- This is a comment -->",
+        "' This is a comment"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 11,
+      "question": "What is the correct HTML element for inserting a line?",
+      "options": [
+        "<break>",
+        "<line>",
+        "<hr>",
+        "<l>"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 12,
+      "question": "Which attribute is used to specify the character encoding for the HTML document?",
+      "options": [
+        "charset",
+        "encoding",
+        "lang",
+        "meta"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 13,
+      "question": "Which HTML element defines the title of a document?",
+      "options": [
+        "<meta>",
+        "<head>",
+        "<title>",
+        "<header>"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 14,
+      "question": "What does the <em> tag do?",
+      "options": [
+        "Makes the text bold",
+        "Underlines the text",
+        "Italicizes the text with emphasis",
+        "Highlights the text"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 15,
+      "question": "Which element is used to embed external content like a webpage within another page?",
+      "options": [
+        "<object>",
+        "<iframe>",
+        "<embed>",
+        "<link>"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 16,
+      "question": "How do you create an email link in HTML?",
+      "options": [
+        "<a href='email'>user@example.com</a>",
+        "<a href='mailto:user@example.com'>Email</a>",
+        "<mail>user@example.com</mail>",
+        "<email>user@example.com</email>"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 17,
+      "question": "Which tag is used to define a list item?",
+      "options": [
+        "<li>",
+        "<item>",
+        "<list>",
+        "<ul>"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 18,
+      "question": "What is the correct way to include a favicon in HTML?",
+      "options": [
+        "<icon rel='favicon' href='favicon.ico'>",
+        "<favicon src='favicon.ico'>",
+        "<link rel='icon' href='favicon.ico'>",
+        "<head icon='favicon.ico'>"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 19,
+      "question": "Which HTML tag is used to play audio files?",
+      "options": [
+        "<audio>",
+        "<sound>",
+        "<media>",
+        "<mp3>"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 20,
+      "question": "Which element is used to group related elements in a form?",
+      "options": [
+        "<fieldset>",
+        "<legend>",
+        "<formgroup>",
+        "<section>"
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "css": [
+    {
+      "id": 1,
+      "question": "What does CSS stand for?",
+      "options": [
+        "Creative Style Sheets",
+        "Cascading Style Sheets",
+        "Computer Style Sheets",
+        "Colorful Style Sheets"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 2,
+      "question": "Which property is used to change the text color of an element?",
+      "options": [
+        "text-color",
+        "font-color",
+        "color",
+        "text-style"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 3,
+      "question": "Which CSS property controls the text size?",
+      "options": [
+        "font-style",
+        "text-style",
+        "text-size",
+        "font-size"
+      ],
+      "correctAnswer": 4
+    },
+    {
+      "id": 4,
+      "question": "How do you insert a comment in a CSS file?",
+      "options": [
+        "// this is a comment",
+        "/* this is a comment */",
+        "' this is a comment",
+        "<!-- this is a comment -->"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 5,
+      "question": "Which property is used to change the background color?",
+      "options": [
+        "bgcolor",
+        "background-color",
+        "color",
+        "background"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 6,
+      "question": "Which CSS property is used to change the font of an element?",
+      "options": [
+        "font-style",
+        "font-family",
+        "font-weight",
+        "text-style"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 7,
+      "question": "Which CSS property is used to make text bold?",
+      "options": [
+        "font-style",
+        "font-weight",
+        "text-bold",
+        "bold"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 8,
+      "question": "Which CSS property is used to change the left margin of an element?",
+      "options": [
+        "margin-left",
+        "padding-left",
+        "indent",
+        "text-indent"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 9,
+      "question": "Which CSS property is used to control the space between elements?",
+      "options": [
+        "padding",
+        "margin",
+        "border",
+        "spacing"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 10,
+      "question": "Which CSS property is used to specify the type of list item marker?",
+      "options": [
+        "list-style-type",
+        "list-type",
+        "list-marker",
+        "marker-type"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 11,
+      "question": "Which CSS property is used to specify the kind of border to display?",
+      "options": [
+        "border-style",
+        "border-type",
+        "border-kind",
+        "border"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 12,
+      "question": "Which CSS property is used to set the spacing between lines of text?",
+      "options": [
+        "line-height",
+        "text-spacing",
+        "line-spacing",
+        "spacing"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 13,
+      "question": "Which CSS property is used to make text italic?",
+      "options": [
+        "font-style",
+        "font-variant",
+        "text-style",
+        "font-type"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 14,
+      "question": "Which CSS property is used to set the width of an element?",
+      "options": [
+        "element-width",
+        "width",
+        "size",
+        "max-width"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 15,
+      "question": "Which CSS property is used to set the height of an element?",
+      "options": [
+        "element-height",
+        "height",
+        "size",
+        "max-height"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 16,
+      "question": "Which CSS property is used to hide an element?",
+      "options": [
+        "visibility: hidden",
+        "display: none",
+        "opacity: 0",
+        "All of the above"
+      ],
+      "correctAnswer": 4
+    },
+    {
+      "id": 17,
+      "question": "Which CSS property is used to change the cursor when hovering over an element?",
+      "options": [
+        "hover-cursor",
+        "cursor",
+        "pointer",
+        "mouse-pointer"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 18,
+      "question": "Which CSS property is used to align text to the center?",
+      "options": [
+        "text-align: center",
+        "align: center",
+        "text-center",
+        "center-align"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 19,
+      "question": "Which CSS property is used to set the maximum width of an element?",
+      "options": [
+        "max-width",
+        "width-limit",
+        "maximum-width",
+        "limit-width"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 20,
+      "question": "Which CSS property is used to set the minimum height of an element?",
+      "options": [
+        "min-height",
+        "height-min",
+        "minimum-height",
+        "limit-height"
+      ],
+      "correctAnswer": 1
+    }
+  ],
+  "javascript": [
+    {
+      "id": 1,
+      "question": "Which company developed JavaScript?",
+      "options": [
+        "Microsoft",
+        "Netscape",
+        "Google",
+        "Oracle"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 2,
+      "question": "Which of the following is a JavaScript data type?",
+      "options": [
+        "Float",
+        "Integer",
+        "Undefined",
+        "Character"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 3,
+      "question": "Inside which HTML element do we put the JavaScript?",
+      "options": [
+        "<script>",
+        "<js>",
+        "<javascript>",
+        "<code>"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 4,
+      "question": "How do you create a function in JavaScript?",
+      "options": [
+        "function:myFunction()",
+        "function = myFunction()",
+        "function myFunction()",
+        "create function myFunction()"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 5,
+      "question": "How do you call a function named `myFunction`?",
+      "options": [
+        "call myFunction()",
+        "myFunction()",
+        "call function myFunction()",
+        "run myFunction"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 6,
+      "question": "How to write an IF statement in JavaScript?",
+      "options": [
+        "if i == 5 then",
+        "if i = 5",
+        "if (i == 5)",
+        "if i == 5:"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 7,
+      "question": "Which operator is used to assign a value to a variable?",
+      "options": [
+        "*",
+        "=",
+        "==",
+        ":"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 8,
+      "question": "What will `typeof []` return?",
+      "options": [
+        "'array'",
+        "'object'",
+        "'list'",
+        "'undefined'"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 9,
+      "question": "Which method converts JSON to a JavaScript object?",
+      "options": [
+        "JSON.toObject()",
+        "JSON.parse()",
+        "JSON.stringify()",
+        "JSON.decode()"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 10,
+      "question": "Which symbol is used for single-line comments in JavaScript?",
+      "options": [
+        "/* */",
+        "//",
+        "<!-- -->",
+        "#"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 11,
+      "question": "Which function is used to print something in the console?",
+      "options": [
+        "log()",
+        "console.print()",
+        "console.log()",
+        "print.console()"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 12,
+      "question": "What is the correct syntax to create a class in JavaScript?",
+      "options": [
+        "class = MyClass {}",
+        "class MyClass {}",
+        "MyClass class {}",
+        "new class MyClass() {}"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 13,
+      "question": "Which of the following is a falsy value?",
+      "options": [
+        "0",
+        "null",
+        "'' (empty string)",
+        "All of the above"
+      ],
+      "correctAnswer": 4
+    },
+    {
+      "id": 14,
+      "question": "What does the `this` keyword refer to in a regular function?",
+      "options": [
+        "The function itself",
+        "The global object",
+        "The parent object",
+        "The class name"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 15,
+      "question": "Which of the following is NOT a JavaScript loop?",
+      "options": [
+        "for",
+        "while",
+        "repeat-until",
+        "do...while"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 16,
+      "question": "What is the output of `2 + '2'` in JavaScript?",
+      "options": [
+        "4",
+        "22",
+        "'4'",
+        "Error"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 17,
+      "question": "Which built-in method removes the last element from an array?",
+      "options": [
+        "pop()",
+        "push()",
+        "shift()",
+        "delete()"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 18,
+      "question": "How can you detect the client's browser name in JavaScript?",
+      "options": [
+        "navigator.appName",
+        "browser.name",
+        "window.browser",
+        "client.browser"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 19,
+      "question": "Which keyword is used to declare a constant in JavaScript?",
+      "options": [
+        "var",
+        "let",
+        "const",
+        "constant"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 20,
+      "question": "What is the result of `typeof null`?",
+      "options": [
+        "'null'",
+        "'undefined'",
+        "'object'",
+        "'boolean'"
+      ],
+      "correctAnswer": 3
+    }
+  ],
+  "typescript": [
+    {
+      "id": 1,
+      "question": "What is TypeScript primarily used for?",
+      "options": [
+        "Styling web pages",
+        "Creating databases",
+        "Adding static typing to JavaScript",
+        "Server-side rendering"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 2,
+      "question": "Which company developed TypeScript?",
+      "options": [
+        "Google",
+        "Facebook",
+        "Microsoft",
+        "Amazon"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 3,
+      "question": "What file extension is used for TypeScript files?",
+      "options": [
+        ".js",
+        ".ts",
+        ".tsx",
+        ".typescript"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 4,
+      "question": "Which keyword is used to define a TypeScript interface?",
+      "options": [
+        "type",
+        "class",
+        "interface",
+        "struct"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 5,
+      "question": "How do you specify a variable can be a string or null in TypeScript?",
+      "options": [
+        "let name: string | null",
+        "let name: string || null",
+        "let name = string || null",
+        "let name: [string, null]"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 6,
+      "question": "What is the purpose of the `as` keyword in TypeScript?",
+      "options": [
+        "Casting types",
+        "Creating aliases",
+        "Asynchronous functions",
+        "Declaring arrays"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 7,
+      "question": "What does the `?` symbol after a property name in an interface mean?",
+      "options": [
+        "It's optional",
+        "It's private",
+        "It's deprecated",
+        "It's required"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 8,
+      "question": "Which command compiles a TypeScript file?",
+      "options": [
+        "ts-compile file.ts",
+        "ts file.ts",
+        "tsc file.ts",
+        "typescript file.ts"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 9,
+      "question": "How do you define a tuple in TypeScript?",
+      "options": [
+        "let x: (string, number)",
+        "let x: [string, number]",
+        "let x = [string, number]",
+        "let x = (string, number)"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 10,
+      "question": "What does `readonly` do in a TypeScript interface?",
+      "options": [
+        "Makes a property invisible",
+        "Allows reassignment",
+        "Prevents reassignment",
+        "Converts to private"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 11,
+      "question": "Which of the following is NOT a valid TypeScript type?",
+      "options": [
+        "boolean",
+        "string",
+        "float",
+        "unknown"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 12,
+      "question": "What does `never` mean in TypeScript?",
+      "options": [
+        "Function always returns null",
+        "Function always returns something",
+        "Function never returns (e.g., throws)",
+        "Function may return anything"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 13,
+      "question": "How do you define a union type in TypeScript?",
+      "options": [
+        "type Status = 'open' || 'closed'",
+        "type Status = 'open' | 'closed'",
+        "type Status = ['open', 'closed']",
+        "type Status = {'open', 'closed'}"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 14,
+      "question": "What does the `any` type mean?",
+      "options": [
+        "The variable must be a string",
+        "The variable cannot be null",
+        "The variable can be any type",
+        "The variable must be a number"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 15,
+      "question": "Which type should be used when a value can be unknown at runtime?",
+      "options": [
+        "any",
+        "void",
+        "never",
+        "unknown"
+      ],
+      "correctAnswer": 4
+    },
+    {
+      "id": 16,
+      "question": "How do you write a function that returns a number?",
+      "options": [
+        "function add(): number {}",
+        "function add() => number {}",
+        "function add() { return number }",
+        "function add(number) {}"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 17,
+      "question": "What does `tsconfig.json` configure?",
+      "options": [
+        "Type checking rules only",
+        "TypeScript compilation options",
+        "JavaScript runtime",
+        "Web server routes"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": 18,
+      "question": "What is the difference between `interface` and `type`?",
+      "options": [
+        "`interface` is only for classes",
+        "`type` can't describe functions",
+        "`interface` can be extended",
+        "They are always interchangeable"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": 19,
+      "question": "What is the output type of `Array<string>.length`?",
+      "options": [
+        "number",
+        "string",
+        "Array",
+        "boolean"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 20,
+      "question": "How do you ensure a variable is never null or undefined in strict mode?",
+      "options": [
+        "By using `!` (non-null assertion)",
+        "By declaring with `var`",
+        "By wrapping in try-catch",
+        "By using `as null`"
+      ],
+      "correctAnswer": 1
+    }
+  ]
+}

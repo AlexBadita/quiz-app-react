@@ -7,13 +7,15 @@ import Timer from "../components/Timer";
 import QuizProgress from "../components/QuizProgress";
 import QuizCloseModal from "../components/QuestionModal";
 import QuestionContent from "../components/QuestionContent";
-import { Question, QuestionStatus } from "@/types/types";
+import { Question, QuestionStatus, CategoryData } from "@/types/types";
 import { findNextQuestion, selectQuestions } from "@/utils/questionUtils";
 import questionsData from "@/assets/data/questions.json";
 import { useUserContext } from "@/context/UserContext";
+import { useCategoryContext } from "@/context/CategoryContext";
 
 const QuestionScreen = () => {
   const router = useRouter();
+  const { category } = useCategoryContext();
 
   // The list of questions for the current quiz
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -34,7 +36,9 @@ const QuestionScreen = () => {
 
   // Initial setup (pick 10 questions for the quiz)
   useEffect(() => {
-    const selectedQuestions = selectQuestions(questionsData);
+    const allCategories: CategoryData = questionsData;
+    const selectedCategory = allCategories[category];
+    const selectedQuestions = selectQuestions(selectedCategory);
     setQuestions(selectedQuestions);
   }, []);
 
